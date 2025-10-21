@@ -1,23 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page Title</title>
-</head>
-<body style="background-color:aquamarine;">
-
-<h1 style="text-align:center;">DZAK</h1>
-<p>"DZAK" is not just a name. is my hole life meaning.</p>
-<p style="color:rgb(255, 164, 164);">Lorem ipsum dolor sit amet. Et repellendus aspernatur et possimus internos ea veniam.
-<div style="display: flex; justify-content: center;">
-<button style="color: maroon; background-color: navy; border: none; font-size: 24px; font-style: italic; width: 200px; height: 50px; border-radius:10px;"onclick="alert ('DZAK k-nya kiboy!!!!! ')">Tekan Saya!</button>
 <style>
-button:hover {
-border: 3px white solid !important;
-color: white !important;
+  body { background-color: aquamarine; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+  h1 { text-align: center; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .center { display: flex; justify-content: center; }
+  button.cta {
+    color: maroon;
+    background-color: navy;
+    border: none;
+    font-size: 24px;
+    font-style: italic;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button.cta:hover { border: 3px solid white; color: white; }
+  .light { color: rgb(255, 164, 164); }
+  .img-wrap { overflow: hidden; height: 220px; display: flex; justify-content: center; align-items: center; }
+  .img-wrap img { width: 200px; animation: slide 6s linear infinite; }
+  @keyframes slide {
+    0% { transform: translateX(-150%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(150%); }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>DZAK</h1>
 
-<br><br>
-<marquee direction="right">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4RHP9l82JaeAS3bFN9awiHeE20jj-TtUXg&s" alt="car" style="width:200px;">
-</marquee>
+    <p>"DZAK" is not just a name. It is my whole life's meaning.</p>
+
+    <p class="light">Lorem ipsum dolor sit amet. Et repellendus aspernatur et possimus internos ea veniam.</p>
+
+    <div class="center" style="margin: 20px 0;">
+      <button class="cta" onclick="alert('DZAK k-nya kiboy!!!!!')">Tekan Saya!</button>
+    </div>
+
+    <div class="img-wrap" aria-hidden="false">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg4RHP9l82JaeAS3bFN9awiHeE20jj-TtUXg&s" alt="car">
+    </div>
+  </div>
 </body>
 </html>
